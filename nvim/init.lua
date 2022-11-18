@@ -11,6 +11,7 @@ vim.cmd
 	set softtabstop =4
 	set shiftwidth  =4
 	set expandtab
+	set cursorline
 
 	colorscheme gruvbox
 	let g:gruvbox_contrast_dark='hard'
@@ -77,4 +78,20 @@ vim.keymap.set('i', '<silent><expr> <c-space>', 'coc#refresh()')
 vim.keymap.set('n', '<C-t>', '<Cmd>NvimTreeToggle<cr>')
 vim.keymap.set('n', '<Leader>n', '<Cmd>NvimTreeFocus<cr>')
 vim.keymap.set('n', '<C-n>', '<Cmd>NvimTreeRefresh<cr>')
+
+vim.keymap.set('n', '<Leader>tt', '<Cmd>belowright split | resize 15 | term<cr>')
+
+-- Buffers
+-- Buffer close
+vim.keymap.set('n', '<Leader>bw', '<Cmd>bw<cr>')
+-- Buffer switch
+vim.keymap.set('n', '<Leader>b1', '<Cmd>LualineBuffersJump 1<cr>')
+vim.keymap.set('n', '<Leader>b2', '<Cmd>LualineBuffersJump 2<cr>')
+vim.keymap.set('n', '<Leader>b3', '<Cmd>LualineBuffersJump 3<cr>')
+vim.keymap.set('n', '<Leader>b4', '<Cmd>LualineBuffersJump 4<cr>')
+vim.keymap.set('n', '<Leader>b5', '<Cmd>LualineBuffersJump 5<cr>')
+vim.keymap.set('n', '<Leader>b6', '<Cmd>LualineBuffersJump 6<cr>')
+vim.keymap.set('n', '<Leader>b7', '<Cmd>LualineBuffersJump 7<cr>')
+vim.keymap.set('n', '<Leader>b8', '<Cmd>LualineBuffersJump 8<cr>')
+vim.keymap.set('n', '<Leader>b9', '<Cmd>LualineBuffersJump 9<cr>')
 
